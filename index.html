@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نيبلكس - وكالة تطوير المواقع</title>
+    <meta
+        name="description"
+        content="وكالة نيبلكس تقدم حلول تطوير ويب وتصميم احترافية لتسريع نمو عملك الرقمي"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <header class="main-header">
+        <nav class="container">
+            <div class="nav-brand">
+                <a href="#الرئيسية">
+                    <img
+                        src="Neblixlogo-nobg.jpeg"
+                        alt="شعار نيبلكس"
+                        width="120"
+                        height="40"
+                    />
+                </a>
+            </div>
+
+            <div class="nav-container">
+                <div class="desktop-nav">
+                    <ul class="nav-links">
+                        <li><a href="#الرئيسية" class="nav-link active">الرئيسية</a></li>
+                        <li><a href="#خدماتنا" class="nav-link">خدماتنا</a></li>
+                        <li><a href="#مشاريعنا" class="nav-link">مشاريعنا</a></li>
+                        <li><a href="#فريق-العمل" class="nav-link">فريق العمل</a></li>
+                        <li><a href="#تواصل-معنا" class="nav-link">تواصل</a></li>
+                        <li class="settings-dropdown">
+                            <button class="settings-toggle" aria-label="إعدادات الموقع">
+                                <i class="fas fa-cog"></i>
+                            </button>
+                            <ul class="settings-menu">
+                                <li>
+                                    <button id="lang-toggle" aria-label="تغيير اللغة إلى الإنجليزية">
+                                        <i class="fas fa-language"></i> <span data-lang="ar">English</span>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button id="theme-toggle" aria-label="تغيير ألوان الموقع إلى الوضع الداكن">
+                                        <i class="fas fa-moon"></i> <span data-lang="ar">الوضع الداكن</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <button
+                    class="mobile-menu-toggle"
+                    id="mobile-menu-toggle"
+                    aria-label="قائمة الهاتف"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="mobile-nav" id="mobile-nav">
+                    <div class="mobile-nav-header">
+                        <img
+                            src="Neblixlogo-nobg.jpeg"
+                            alt="شعار نيبلكس"
+                            width="90"
+                            height="40"
+                            border-reduise="50%"
+                        />
+                        <button class="close-menu" id="close-menu">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <ul class="mobile-links">
+                        <li>
+                            <a href="#الرئيسية" class="mobile-link active">الرئيسية</a>
+                        </li>
+                        <li><a href="#خدماتنا" class="mobile-link">خدماتنا</a></li>
+                        <li><a href="#مشاريعنا" class="mobile-link">مشاريعنا</a></li>
+                        <li><a href="#فريق-العمل" class="mobile-link">فريق العمل</a></li>
+                        <li><a href="#تواصل-معنا" class="mobile-link">تواصل</a></li>
+                        <li>
+                            <button id="mobile-lang-toggle" aria-label="تغيير اللغة إلى الإنجليزية">
+                                <i class="fas fa-language"></i> <span data-lang="ar">English</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="mobile-theme-toggle" aria-label="تغيير ألوان الموقع إلى الوضع الداكن">
+                                <i class="fas fa-moon"></i> <span data-lang="ar">الوضع الداكن</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="mobile-nav-footer">
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="الرئيسية" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        حلول ويب مبتكرة <span>لنجاحك الرقمي</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        نحن هنا لتحويل أفكارك إلى واقع رقمي مذهل وتحقيق أهدافك الطموحة.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#خدماتنا" class="btn btn-primary">اكتشف خدماتنا</a>
+                        <a href="#تواصل-معنا" class="btn btn-outline">تحدث معنا</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img
+                        src="Neblix.jpeg"
+                        alt="تصميم عصري للواجهة"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="خدماتنا" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">خدماتنا <span>المتميزة</span></h2>
+                <p class="section-description">
+                    نقدم مجموعة متكاملة من الحلول الرقمية المصممة خصيصًا لاحتياجات عملك
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>تطوير الويب الحديث</h3>
+                    <p>
+                        تصميم وتطوير مواقع ويب متجاوبة، سريعة، وآمنة باستخدام أحدث
+                        التقنيات.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>تطبيقات جوال مبتكرة</h3>
+                    <p>
+                        تطوير تطبيقات جوال سلسة وعالية الأداء لنظامي iOS و Android
+                        بتصميمات عصرية.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>تصميم UX/UI احترافي</h3>
+                    <p>
+                        إنشاء تجارب مستخدم جذابة وواجهات مستخدم بديهية تركز على المستخدم.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>استراتيجيات التسويق الرقمي</h3>
+                    <p>حلول تسويقية رقمية مخصصة لزيادة ظهورك وتحقيق نمو مستدام.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="مشاريعنا" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">أحدث <span>أعمالنا</span></h2>
+                <p class="section-description">
+                    استكشف بعض المشاريع التي نفخر بها والتي تعكس إبداعنا وخبرتنا
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img
+                        src="Screenshot 2025-04-26 112301.png"
+                        alt="مشروع رقم 1"
+                        width="400"
+                        height="300"
+                        loading="lazy"
+                    />
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Royal-Chorno</h3>
+                            <p>Royal Excellence in Every Moment</p>
+                            <a href="https://aliemad2004.github.io/Royal-Chorno/" class="btn btn-outline">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img
+                        src="scrcafe.png"
+                        alt="مشروع رقم 2"
+                        width="400"
+                        height="300"
+                        loading="lazy"
+                    />
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Freinds Cafe </h3>
+                            <p>Your cozy spot for the best coffee and delightful moments.</p>
+                            <a href="https://aliemad2004.github.io/caffe/" class="btn btn-outline">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img
+                        src="Screenshot 2025-04-26 141527.png"
+                        alt="مشروع رقم 3"
+                        width="400"
+                        height="300"
+                        loading="lazy"
+                    />
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>مشروع تعليمى</h3>
+                            <p>مشروع تعليمى للطلاب عن الفضاء</p>
+                            <a href="https://aliemad2004.github.io/space2/" class="btn btn-outline">عرض التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="فريق-العمل" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">فريقنا <span>المحترف</span></h2>
+                <p class="section-description">
+                    تعرف على الفريق المبدع الذي يقف وراء نجاح مشاريعنا
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <img
+                        src="mohamed.k.jpeg"
+                        alt="اسم العضو 1"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                    />
+                    <div class="team-details">
+                        <h3>محمد عماد</h3>
+                        <p>Software Develober</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img
+                        src="ali profile.jpg"
+                        alt="اسم العضو 2"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                    />
+                    <div class="team-details">
+                        <h3>على عماد</h3>
+                        <p>المؤسس و CEO</p>
+                        <div class="social-links">
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/ali-emad-449614262/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/aliemad2004"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <img
+                        src="qa3qa3.jpeg"
+                        alt="اسم العضو 3"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                    />
+                    <div class="team-details">
+                        <h3>معتز  علاء </h3>
+                        <p>UI,UX Designer</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">عملاؤنا <span>الراضون</span></h2>
+                <p class="section-description">
+                    شركات وعلامات تجارية وثقنا بها وساعدناها في تحقيق أهدافها
+                </p>
+            </div>
+
+            <div class="clients-grid">
+                <div class="client-logo">
+                    <img
+                        src="w1.jpeg"
+                        alt="عميل 1"
+                        width="150"
+                        height="60"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="client-logo">
+                    <img
+                        src="w2.jpeg"
+                        alt="عميل 2"
+                        width="150"
+                        height="60"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="client-logo">
+                    <img
+                        src="w3.jpeg"
+                        alt="عميل 3"
+                        width="150"
+                        height="60"
+                        loading="lazy"
+                    />
+                </div>
+                <div class="client-logo">
+                    <img
+                        src="w4.jpeg"
+                        alt="عميل 4"
+                        width="150"
+                        height="60"
+                        loading="lazy"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="تواصل-معنا" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">تواصل <span>بسهولة</span></h2>
+                    <p class="contact-description">
+                        يسعدنا تواصلك للإجابة على استفساراتك ومناقشة مشاريعك القادمة.
+                    </p>
+
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span> سمادون , القاهرة , مصر</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Neblix0@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+201010361316</span>
+                        </li>
+                    </ul>
+
+                    <div class="contact-social">
+                        <a href="https://www.facebook.com/profile.php?id=61575513992114"
+                            ><i class="fab fa-facebook-f"></i
+                        ></a>
+                        <a href="https://wa.me/message/GBSFURILEC4DK1"
+                            ><i class="fab fa-whatsapp"></i
+                        ></a>
+                        <a href="https://www.linkedin.com/in/neblix-undefined-866365362/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/neblix.official0"
+                            ><i class="fab fa-instagram"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required />
+                            <label for="name">الاسم الكامل</label>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required />
+                            <label for="email">البريد الإلكتروني</label>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" />
+                            <label for="subject">الموضوع (اختياري)</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message">رسالتك</label>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            إرسال الرسالة
+                        </button>
+                        <div id="form-response" class="alert" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img
+                        src="Neblixlogo-nobg.jpeg"
+                        alt="شعار نيبلكس"
+                        width="120"
+                        height="40"
+                        loading="lazy"
+                    />
+                    <p>
+                        وكالة رائدة في تطوير الويب، نقدم حلولًا مبتكرة وتقنيات متقدمة
+                        لنجاح أعمالك الرقمية.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#الرئيسية">الرئيسية</a></li>
+                        <li><a href="#خدماتنا">خدماتنا</a></li>
+                        <li><a href="#مشاريعنا">مشاريعنا</a></li>
+                        <li><a href="#فريق-العمل">فريق العمل</a></li>
+                        <li><a href="#تواصل-معنا">تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h3>خدماتنا</h3>
+                    <ul>
+                        <li><a href="#">تطوير الويب</a></li>
+                        <li><a href="#">تطبيقات الجوال</a></li>
+                        <li><a href="#">تصميم UX/UI</a></li>
+                        <li><a href="#">التسويق الرقمي</a></li>
+                        <li><a href="#">استضافة المواقع</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-newsletter">
+                    <h3>النشرة البريدية</h3>
+                    <p>اشترك ليصلك كل جديد عن خدماتنا وعروضنا الخاصة.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="بريدك الإلكتروني" required />
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> نيبلكس. جميع الحقوق محفوظة.</p>
+                <div class="footer-legal">
+                    <a href="#">شروط الخدمة</a>
+                    <a href="#">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
